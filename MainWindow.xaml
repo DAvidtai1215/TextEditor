@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TextEditor"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="460" Width="800" Background="#FFAEE9D5">
+    <Grid Margin="0,0,0,-5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="449*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnOpen" Content="開啟檔案" HorizontalAlignment="Left" Height="44" Margin="21,10,0,0" VerticalAlignment="Top" Width="89" Click="btnOpen_Click"/>
+        <Button x:Name="btnSave" Content="存檔" HorizontalAlignment="Left" Height="44" Margin="125,10,0,0" VerticalAlignment="Top" Width="89" Click="btnSave_Click"/>
+        <ComboBox x:Name="cmbFontSize" Margin="373,21,352,406" SelectionChanged="cmbFontSize_SelectionChanged"/>
+        <RichTextBox x:Name="rtbText" HorizontalAlignment="Left" Height="364" Margin="21,59,0,0" VerticalAlignment="Top" Width="751">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="btnBold" Content="B" HorizontalAlignment="Left" Height="20" Margin="463,22,0,0" VerticalAlignment="Top" Width="24" FontWeight="Bold"/>
+        <Button x:Name="btnItalic" Content="I" HorizontalAlignment="Left" Height="20" Margin="505,22,0,0" VerticalAlignment="Top" Width="24" FontStyle="Italic" FontFamily="Bell MT" FontWeight="Bold"/>
+        <Button x:Name="btnUnderline" Content="U" HorizontalAlignment="Left" Height="20" Margin="545,22,0,0" VerticalAlignment="Top" Width="24" FontWeight="Bold"/>
+        <ComboBox x:Name="cmbFontFamily" HorizontalAlignment="Left" Height="20" Margin="232,22,0,0" VerticalAlignment="Top" Width="128" SelectionChanged="cmbFontFamily_SelectionChanged"/>
+
     </Grid>
 </Window>
