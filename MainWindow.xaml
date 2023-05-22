@@ -21,9 +21,9 @@
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
-        <Button x:Name="btnBold" Content="B" HorizontalAlignment="Left" Height="20" Margin="463,22,0,0" VerticalAlignment="Top" Width="24" FontWeight="Bold"/>
-        <Button x:Name="btnItalic" Content="I" HorizontalAlignment="Left" Height="20" Margin="505,22,0,0" VerticalAlignment="Top" Width="24" FontStyle="Italic" FontFamily="Bell MT" FontWeight="Bold"/>
-        <Button x:Name="btnUnderline" Content="U" HorizontalAlignment="Left" Height="20" Margin="545,22,0,0" VerticalAlignment="Top" Width="24" FontWeight="Bold"/>
+        <Button x:Name="btnBold" Content="B" HorizontalAlignment="Left" Height="20" Margin="463,22,0,0" VerticalAlignment="Top" Width="24" FontWeight="Bold" Click="btnBold_Click"/>
+        <Button x:Name="btnItalic" Content="I" HorizontalAlignment="Left" Height="20" Margin="505,22,0,0" VerticalAlignment="Top" Width="24" FontStyle="Italic" FontFamily="Bell MT" FontWeight="Bold" Click="btnItalic_Click"/>
+        <Button x:Name="btnUnderline" Content="U" HorizontalAlignment="Left" Height="20" Margin="545,22,0,0" VerticalAlignment="Top" Width="24" FontWeight="Bold" Click="btnUnderline_Click"/>
         <ComboBox x:Name="cmbFontFamily" HorizontalAlignment="Left" Height="20" Margin="232,22,0,0" VerticalAlignment="Top" Width="128" SelectionChanged="cmbFontFamily_SelectionChanged"/>
 
     </Grid>
