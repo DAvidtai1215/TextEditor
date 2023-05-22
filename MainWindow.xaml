@@ -13,8 +13,8 @@
         </Grid.RowDefinitions>
         <Button x:Name="btnOpen" Content="開啟檔案" HorizontalAlignment="Left" Height="44" Margin="21,10,0,0" VerticalAlignment="Top" Width="89" Click="btnOpen_Click"/>
         <Button x:Name="btnSave" Content="存檔" HorizontalAlignment="Left" Height="44" Margin="125,10,0,0" VerticalAlignment="Top" Width="89" Click="btnSave_Click"/>
-        <ComboBox x:Name="cmbFontSize" Margin="373,21,352,406" SelectionChanged="cmbFontSize_SelectionChanged"/>
-        <RichTextBox x:Name="rtbText" HorizontalAlignment="Left" Height="364" Margin="21,59,0,0" VerticalAlignment="Top" Width="751">
+        <ComboBox x:Name="cmbFontSize" Margin="362,22,363,472" SelectionChanged="cmbFontSize_SelectionChanged"/>
+        <RichTextBox x:Name="rtbText" HorizontalAlignment="Center" Height="364" VerticalAlignment="Center" Width="752">
             <FlowDocument>
                 <Paragraph>
                     <Run Text="RichTextBox"/>
@@ -24,7 +24,7 @@
         <Button x:Name="btnBold" Content="B" HorizontalAlignment="Left" Height="20" Margin="463,22,0,0" VerticalAlignment="Top" Width="24" FontWeight="Bold" Click="btnBold_Click"/>
         <Button x:Name="btnItalic" Content="I" HorizontalAlignment="Left" Height="20" Margin="505,22,0,0" VerticalAlignment="Top" Width="24" FontStyle="Italic" FontFamily="Bell MT" FontWeight="Bold" Click="btnItalic_Click"/>
         <Button x:Name="btnUnderline" Content="U" HorizontalAlignment="Left" Height="20" Margin="545,22,0,0" VerticalAlignment="Top" Width="24" FontWeight="Bold" Click="btnUnderline_Click"/>
-        <ComboBox x:Name="cmbFontFamily" HorizontalAlignment="Left" Height="20" Margin="232,22,0,0" VerticalAlignment="Top" Width="128" SelectionChanged="cmbFontFamily_SelectionChanged"/>
+        <ComboBox x:Name="cmbFontFamily" HorizontalAlignment="Left" Height="20" Margin="229,23,0,0" VerticalAlignment="Top" Width="128" SelectionChanged="cmbFontFamily_SelectionChanged"/>
 
     </Grid>
 </Window>
